@@ -1,0 +1,26 @@
+[package]
+name = "time-oxide"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+authors = ["Angel Dollface"]
+description= "A small web clock written in Rust."
+homepage = "https://github.com/angeldollface/time-oxide"
+repository = "https://github.com/angeldollface/time-oxide"
+documentation = "https://github.com/angeldollface/time-oxide"
+readme = "README.markdown"
+keywords = [
+    "web-app"
+]
+categories = [
+    "web-app"
+]
+exclude = [
+    "/.github"
+]
+
+[dependencies]
+yew-hooks = "0.2.0"
+chrono = "0.4.23"
+wasm-bindgen = "0.2.83"
+yew = { version = "0.20.0", features = ["csr"] }
