@@ -6,11 +6,11 @@ Licensed under the MIT license.
 /* Layout variables start. */
 
 :root {
-    --timeColor: #145DA0;
-    --bodyBackgroundColor: #DCD4F7;
-    --containerColor: #F8C8DC;
-    --accentColor: #FFFFFF;
-    --stdFont: 'OrangeSlice';
+    --timeColor: #FFFFFF;
+    --bodyBackgroundColor: #2E2E2E;
+    --containerColor: #2E2E2E;
+    --shadowColor: #808080;
+    --stdFont: 'VT323';
 }
 
 /* Layout variables end. */
@@ -63,7 +63,8 @@ div.timeContainer {
     display: block;
     margin-top: 20vh !important;
     margin-bottom: 20vh !important;
-    border: 5px solid var(--accentColor);
+    border: none;
+    box-shadow: 1px 2px 15px var(--shadowColor);
     padding: 0px;
     border-radius: 25px;
 }
