@@ -1,0 +1,89 @@
+/*
+TIME OXIDE by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+/* Layout variables start. */
+
+:root {
+    --timeColor: #145DA0;
+    --bodyBackgroundColor: #DCD4F7;
+    --containerColor: #F8C8DC;
+    --accentColor: #FFFFFF;
+    --stdFont: 'OrangeSlice';
+}
+
+/* Layout variables end. */
+
+/* Desktop styling start. */
+
+html {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+body {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bodyBackgroundColor);
+}
+
+p {
+    font-family: var(--stdFont);
+    color: var(--timeColor);
+    font-size: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    display: block;
+    text-align: center;
+}
+
+div.timeContainer {
+    background-color: var(--containerColor);
+    margin: 0 auto;
+    width: 30%;
+    display: block;
+    margin-top: 20vh !important;
+    margin-bottom: 20vh !important;
+    border: 5px solid var(--accentColor);
+    padding: 0px;
+    border-radius: 25px;
+}
+
+/* Desktop styling end. */
+
+/* Responsive styling start. */
+
+@media screen and (max-width: 800px){
+    p {
+        font-size: 75px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    div.timeContainer {
+        margin-top: 15vh !important;
+        width: 60%;
+    }
+}
+
+/* Responsive styling end. */
