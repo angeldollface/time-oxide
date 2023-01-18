@@ -567,6 +567,10 @@ function getImports() {
         const ret = getObject(arg0).getTime();
         return ret;
     };
+    imports.wbg.__wbg_getTimezoneOffset_89bd4275e1ca8341 = function(arg0) {
+        const ret = getObject(arg0).getTimezoneOffset();
+        return ret;
+    };
     imports.wbg.__wbg_new0_a57059d72c5b7aee = function() {
         const ret = new Date();
         return addHeapObject(ret);
@@ -597,15 +601,15 @@ function getImports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper111 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper112 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 14, __wbg_adapter_16);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper235 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper236 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 104, __wbg_adapter_19);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper591 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper592 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 230, __wbg_adapter_22);
         return addHeapObject(ret);
     };
@@ -644,7 +648,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('time-oxide-104b67a67a88c2a3_bg.wasm', import.meta.url);
+        input = new URL('time-oxide-13eb39668851b843_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
