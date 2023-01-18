@@ -7,10 +7,10 @@ Licensed under the MIT license.
 
 :root {
     --timeColor: #FFFFFF;
-    --bodyBackgroundColor: #2E2E2E;
-    --containerColor: #2E2E2E;
+    --bodyBackgroundColor: #FFFFFF;
+    --containerColor: #000000;
     --shadowColor: #808080;
-    --stdFont: 'VT323';
+    --stdFont: 'DotMatrix';
 }
 
 /* Layout variables end. */
@@ -64,7 +64,7 @@ div.timeContainer {
     margin-top: 20vh !important;
     margin-bottom: 20vh !important;
     border: none;
-    box-shadow: 1px 2px 15px var(--shadowColor);
+    box-shadow: 2px 2px 15px var(--shadowColor);
     padding: 0px;
     border-radius: 25px;
 }
