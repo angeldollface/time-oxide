@@ -59,11 +59,19 @@ impl Now {
     pub fn seconds() -> String {
         let mut result: String = String::from("");
         let now: DateTime<Local> = chrono::offset::Local::now();
-        let current_seconds: String = now.second().to_string();
-        result = format!(
-            "{}",
-            current_seconds
-        );
+        let current_seconds: u32 = now.second();
+        if current_seconds < 10 {
+            result = format!(
+                "0{}",
+                current_seconds.to_string()
+            );
+        }
+        else {
+            result = format!(
+                "{}",
+                current_seconds.to_string()
+            );
+        }
         return result;
     }
 
