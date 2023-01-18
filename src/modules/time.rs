@@ -8,7 +8,7 @@ Licensed under the MIT license.
 use chrono::DateTime;
 use chrono::Datelike;
 use chrono::Timelike;
-use chrono::offset::Utc;
+use chrono::offset::Local;
 
 // A "struct" to hold data
 // about the time and date.
@@ -42,7 +42,7 @@ impl Now {
     // Gets the current date.
     pub fn date() -> String {
         let mut result: String = String::from("");
-        let now: DateTime<Utc> = chrono::Utc::now();
+        let now: DateTime<Local> = chrono::offset::Local::now();
         let current_year: String = now.year().to_string();
         let current_month: String = now.month().to_string();
         let current_day: String = now.day().to_string();
@@ -58,7 +58,7 @@ impl Now {
     // Gets seconds as a string.
     pub fn seconds() -> String {
         let mut result: String = String::from("");
-        let now: DateTime<Utc> = chrono::Utc::now();
+        let now: DateTime<Local> = chrono::offset::Local::now();
         let current_seconds: String = now.second().to_string();
         result = format!(
             "{}",
@@ -70,7 +70,7 @@ impl Now {
     // Gets minutes as a string.
     pub fn minutes() -> String {
         let mut result: String = String::from("");
-        let now: DateTime<Utc> = chrono::Utc::now();
+        let now: DateTime<Local> = chrono::offset::Local::now();
         let current_minutes: String = now.minute().to_string();
         result = format!(
             "{}",
@@ -82,7 +82,7 @@ impl Now {
     // Gets hours as a string.
     pub fn hours() -> String {
         let mut result: String = String::from("");
-        let now: DateTime<Utc> = chrono::Utc::now();
+        let now: DateTime<Local> = chrono::offset::Local::now();
         let current_hour: String = now.hour().to_string();
         result = format!(
             "{}",
