@@ -4,7 +4,7 @@
 
 ***A small web clock written in Rust. :gear: :hourglass:***
 
-## TO DO :warning:
+## TO DO :fire:
 
 - Implement local timezone detection.
 - Fill out this `README`.
